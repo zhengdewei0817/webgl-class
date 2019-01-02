@@ -1,0 +1,26 @@
+<html>
+<head>
+    <title>索引缓冲区</title>
+    <meta http-equiv="content-type" content="text/html; charset=gb2312">
+</head>
+<script id="shader-vs" type="x-shader/x-vertex">
+    attribute vec3 v3Position;
+    void main(void)
+    {
+        gl_Position = vec4(v3Position, 1.0);
+    }
+</script>
+
+<script id="shader-fs" type="x-shader/x-fragment">
+    void main(void)
+    {
+        gl_FragColor = vec4(0.0, 1.0, 1.0, 1.0);
+    }
+</script>
+<body>
+    
+    <canvas id="myCanvas" style="border: 1px solid red;" width='600' height='450'></canvas>
+    <script src="../utils/index.js"></script>
+    <script src="./main.js"></script>
+</body>
+</html>

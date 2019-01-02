@@ -60,3 +60,5 @@ Main.prototype.draw = function () {
 
 var main = new Main();
 main.draw();
+
+const aa = window.utils.getShader('../aa.GLSL')

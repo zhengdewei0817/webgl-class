@@ -15,6 +15,9 @@ window.utils = {
     },
     g_gl: function(id) {
         var canvas = document.getElementById(id);
-        return canvas.getContext('webgl');
+        return canvas.getContext('experimental-webgl');
+    },
+    getShader: function (url) {
+        return import(url)
     }
 }
